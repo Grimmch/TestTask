@@ -764,6 +764,18 @@ button.text-buttom-next.read-more.about-footer.btn.btn-outline-warning:hover{
     color: #65B5FC;
 }
 
+.counter {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fdd444;
+    text-align: center;
+    line-height: 20px;
+    top: 0;
+    left: 40px;
+    color: #121D46;
+}
 .slide.active:before {
     content: '';
     display: inline-block;
