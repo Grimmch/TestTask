@@ -280,6 +280,10 @@ text-align: end;
 {
     margin-left: 25px;
 }
+.image-sale-smaller
+{
+    width: 90%;
+}
 
 .box-sale
 {
@@ -551,6 +555,15 @@ line-height: 25px;
     font-size: 12px;
     line-height: 16px;
     
+}
+.text-line-through-none
+{ 
+    color: rgba(44, 59, 160, 0);
+    text-decoration: line-through;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
 }
 .none-any-cart
 {
