@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="./script/slider.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navigation">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-6 col-6">
+                        <nav class="align-items-center">
+                            <ul class="d-flex justify-content-between align-items-center">
+                                <li><a class="align-items-center d-flex align-items-center" href="#">
+                                        <img src="./images/logo.png">
+                                        <span class="text-bigger logo-text">Ремонтные </br>и&nbsp;строительные
+                                            </br>
+                                            работы</span>
+                                    </a>
+                                </li>
+                                <li><a class="navbar" href="#">Услуги</a></li>
+                                <li><a class="navbar" href="#">Портфолио</a></li>
+                                <li><a class="navbar" href="#">Товары</a></li>
+                                <li><a class="navbar" href="#">О&nbsp;нас</a></li>
+                                <li><a class="navbar" href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-6 col-6">
+                        <nav class="align-items-center">
+                            <ul class="d-flex justify-content-between align-items-center">
+                                <li><a class="navbar number-text" href="#">+38 (044) 784-23-85</a>
+                                </li>
+                                <li><button type="button" class="btn btn-warning button-click return-call">Заказать
+                                        звонок</button>
+                                </li>
+                                <style>
+                                    .counter {
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        border-radius: 50%;
+                                        background-color: #fdd444;
+                                        text-align: center;
+                                        line-height: 20px;
+                                        top: 0;
+                                        left: 40px;
+                                        color: #121D46;
+                                    }
+                                </style>
+                                <li><a class="navbar money-text" href="#"> <img class="cart"
+                                            src="./images/Cart.svg">4896 грн<span class="counter">1</span>
+                                        &#9660;</a></li>
+                                <li><a class="navbar number-text" href="#"> <img class="cart"
+                                            src="./images/client.png">Вход</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="row d-flex">
+            <div class="col-12 col-md-5 col-5">
+                <div class="banner-left">
+                    <h1 class="text-banner-left">Проектируем и строим дом вашей мечты</h1>
+                    <p class="text-banner-left-grey"> Проектирование и дизайн любых помещений от опытных
+                        профессионалов.</p>
+                    <p class="text-banner-left-grey"> Проектирование и дизайн любых помещений от опытных
+                        профессионалов.</p>
+                    <button type="button" class="btn btn-warning button-look-more look-more">Смотреть товары
+                        &#8594;</button>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="text-location-banner"><img class="place" src="./images/place.svg">г.Днепр
+                        </a>
+                        <div class="soc-location">
+                            <a href="#"><img class="icon-soc" src="./images/inst.svg"></a>
+                            <a href="#"><img class="icon-soc" src="./images/facebook.svg"></a>
+                            <a href="#"><img class="icon-soc" src="./images/whatsapp.svg"></a>
+                            <a href="#"><img class="icon-soc" src="./images/viber.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 col-7">
+                <div class="bg-1"></div>
+                <div class="bg-2"></div>
+                <div class="slider page-slider-one">
+                    <ul class="slider__wrapper">
+                        <li class="slider__slide">
+                            <img src="./images/banner.png" alt=""><a class="slider-text-color banner-location placed-in"
+                                href="#"> <span>Фасадные
+                                    работы
+                                    &#8594;
+                                </span> </br><span class="slider-text-color banner-location placed-on">от 300
+                                    грн за
+                                    м²</span></a>
+                        </li>
+                        <li class="slider__slide">
+                            <img src="./images/banner.png" alt="">
+                            </liv>
+                        <li class="slider__slide">
+                            <img src="./images/banner.png" alt="">
+                        </li>
+                        <li class="slider__slide">
+                            <img src="./images/banner.png" alt="">
+                        </li>
+                        <li class="slider__slide">
+                            <img src="./images/banner.png" alt="">
+                        </li>
+                    </ul>
+                    <span class="slider__arrow slider__arrow_left"></span>
+                    <span class="slider__arrow slider__arrow_right"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="text-product-can">
+            <a href="#">
+                <h2 class="text-product-can">Наши услуги</h2>
+            </a>
+        </div>
+        <div class="row d-flex">
+            <div class="col-12 col-md-12">
+                <div class="row d-flex">
+                    <div class="col-12 col-md-4">
+                        <nav class="align-items-center">
+                            <ul class="align-items-center">
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/1.svg">
+                                        <span class="text-left-margin-sale">Фасадные работы </span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/4.svg">
+                                        <span class="text-left-margin-sale">Внутренняя отделка </span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/7.svg">
+                                        <span class="text-left-margin-sale">Архитектурные и декоративные элементы
+                                        </span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/10.svg">
+                                        <span class="text-left-margin-sale">Бетонные работы</span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <nav class="align-items-center">
+                            <ul class="align-items-center">
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/2.svg">
+                                        <span class="text-left-margin-sale">Кровельные работы </span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/5.svg">
+                                        <span class="text-left-margin-sale">Штукатурные работы </span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/8.svg">
+                                        <span class="text-left-margin-sale">Стяжка полов полусухим методом
+                                        </span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/11.svg">
+                                        <span class="text-left-margin-sale">Дом под ключ </span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <nav class="align-items-center">
+                            <ul class="align-items-center">
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/3.svg">
+                                        <span class="text-left-margin-sale">Ремонтные работы</span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/6.svg">
+                                        <span class="text-left-margin-sale">Эпоксидные наливные полы </span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                                <li><a class="align-items-center d-flex align-items-center text-product-type box-sale"
+                                        href="#">
+                                        <img src="./images/icons/9.svg">
+                                        <span class="text-left-margin-sale">Заливка крыш и пола полистробетоном</span>
+                                        <img class="text-left-margin-sale" src="./images/icons/Arrow.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="blue-box">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex position-rel">
+            <div class="col-12 col-md-6">
+                <img class="" src="./images/47.png">
+            </div>
+            <div class="col-12 col-md-6">
+                <h2 class="text-best-top">Мы - ваш луший выбор!</h2>
+                <p class="text-best-grey">Наша строительная номпания была основана 15 лет назад: в 2005 году в городе
+                    Днепр.</p>
+                <p class="text-best-grey">Изначальный асортимент предоставляемых услуг был небольшим: фасадные
+                    и кровельные работы.</p>
+                <p class="text-best-grey">За норотний период времени наша компания поназали стабильный рост и завоевали
+                    уважение клиенто
+                    своей отнрытостью, исполнительностью и начеством работы.</p>
+                <p class="text-best-grey">Стремительно и уверенно, еще в самом начале становления, ФасадБуд значительно
+                    расширила спектр своей
+                    деятельности. На данный момент вы можете обратиться н нам за восмью различными качественными
+                    услугами и понупкой высококачественных материалов!</p>
+                <div class="buttom-move">
+                    <button type="button" class="btn btn-outline-warning text-buttom-next read-more about-best">Читать
+                        дальше
+                        <img class="text-left-margin-sale" src="./images/icons/ArrowYellow.svg"></button>
+                </div>
+            </div>
+            <div class="blue-box-best ">
+                <div class="row d-flex">
+                    <div class="col-12 col-md-12">
+                        <ul class="d-flex justify-content-between align-items-center plus-of-company">
+                            <li class="d-flex align-items-center">
+                                <span class="text-plus-company-b">15 </span><span class="text-plus-company-l"> лет на
+                                    рынке</span>
+                            </li>
+                            <li class="d-flex align-items-center"><span class="text-plus-company-b">9 </span><span
+                                    class="text-plus-company-l"> качественных</br>
+                                    услуг</span>
+                            </li>
+                            <li class="d-flex align-items-center"><span class="text-plus-company-b">300+ </span><span
+                                    class="text-plus-company-l">выполненных </br>
+                                    проектов</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-12 col-md-12">
+                <nav class="row d-flex align-items-center ">
+                    <ul class="d-flex justify-content-between align-items-center">
+                        <li>
+                            <h2 class="text-result-of-work">Результаты нашей работы</h2>
+                        </li>
+                        <li><a class="text-best-top-pick" href="#"> Все объекты </a></li>
+                        <li><a class="text-best-top-pick" href="#"> Административные здания </a></li>
+                        <li><a class="text-best-top-pick" href="#"> Жилые Здания </a></li>
+                    </ul>
+                </nav>
+                <div class="row d-flex">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                        style="width: 100%;">
+                        <div class="numbers">
+                            <span class="slide"><a href="javascript:void(0);">01</a></span>
+                            <span class="slide"><a href="javascript:void(0);">02</a></span>
+                            <span class="slide active"><a href="javascript:void(0);">03</a></span>
+                            <span class="slide"><a href="javascript:void(0);">04</a></span>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row d-flex justify-content-between">
+                                    <div class="col-12 col-md-4">
+                                        <ul class="work-done-box">
+                                            <li><img style="max-width: 100%;" class="work-done-image"
+                                                    src="./images/39.png"></li>
+                                            <li class=" place-text-all-distance" style="margin-top: 20px;"><span
+                                                    class="text-name-done-work">Ж/К
+                                                    “Алые
+                                                    Паруса”</span></li>
+                                            <li class=" place-text-all-distance"> <span
+                                                    class="text-place-done-work">Комплекс в г.
+                                                    Днепр</span></li>
+
+                                            <li class="place-text-distance place-text-all-distance"> <span
+                                                    class="text-place-bold-done-work">Виды работ: </span><span
+                                                    class="text-place-done-work"> Фасадные работы</span></li>
+                                            <li class=" place-text-all-distance"><span
+                                                    class="text-place-bold-done-work">Материалы:
+                                                </span><span class="text-place-done-work"> Капарол</span></li>
+                                            <li class="d-flex justify-content-end"> <button type="button"
+                                                    class="btn btn-outline-warning text-buttom-next read-more about-done-work">Читать
+                                                    дальше
+                                                    <img class="text-left-margin-sale"
+                                                        src="./images/icons/ArrowYellow.svg"></button>
+                                            </li>
+                                        </ul>
+                                        <div class="quatr justify-content-center d-flex"><span class="text-quatr">1200
+                                                м²</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <ul class="work-done-box">
+                                            <li><img style="max-width: 100%;" class="work-done-image"
+                                                    src="./images/2.png"></li>
+                                            <li class=" place-text-all-distance" style="margin-top: 20px;"><span
+                                                    class="text-name-done-work">ТЦ
+                                                    “Бульвар Славы”</span></li>
+                                            <li class=" place-text-all-distance"> <span
+                                                    class="text-place-done-work">Торговий комплекс в г. Днепр</span>
+                                            </li>
+
+                                            <li class="place-text-distance place-text-all-distance"> <span
+                                                    class="text-place-bold-done-work">Виды работ: </span><span
+                                                    class="text-place-done-work"> Фасадные работы</span></li>
+                                            <li class=" place-text-all-distance"><span
+                                                    class="text-place-bold-done-work">Материалы:
+                                                </span><span class="text-place-done-work"> Капарол</span></li>
+                                            <li class="d-flex justify-content-end"> <button type="button"
+                                                    class="btn btn-outline-warning text-buttom-next read-more about-done-work">Читать
+                                                    дальше
+                                                    <img class="text-left-margin-sale"
+                                                        src="./images/icons/ArrowYellow.svg"></button>
+                                            </li>
+                                        </ul>
+                                        <div class="quatr justify-content-center d-flex"><span class="text-quatr">500
+                                                м²</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <ul class="work-done-box">
+                                            <li><img style="max-width: 100%;" class="work-done-image"
+                                                    src="./images/3.png"></li>
+                                            <li class=" place-text-all-distance" style="margin-top: 20px;"><span
+                                                    class="text-name-done-work">Ж/К
+                                                    “Изумрудненький”</span></li>
+                                            <li class=" place-text-all-distance"> <span
+                                                    class="text-place-done-work">Комплекс в г.
+                                                    Днепр</span></li>
+
+                                            <li class="place-text-distance place-text-all-distance"> <span
+                                                    class="text-place-bold-done-work">Виды работ: </span><span
+                                                    class="text-place-done-work"> Фасадные работы</span></li>
+                                            <li class=" place-text-all-distance"><span
+                                                    class="text-place-bold-done-work">Материалы:
+                                                </span><span class="text-place-done-work"> Капарол</span></li>
+                                            <li class="d-flex justify-content-end"> <button type="button"
+                                                    class="btn btn-outline-warning text-buttom-next read-more about-done-work">Подробнее
+                                                    <img class="text-left-margin-sale"
+                                                        src="./images/icons/ArrowYellow.svg"></button>
+                                            </li>
+                                        </ul>
+                                        <div class="quatr justify-content-center d-flex"><span class="text-quatr">1400
+                                                м²</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev" aria-hidden="true"> <img src="./images/prev.svg"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next" aria-hidden="true"> <img src="./images/next.svg"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 150px;" class="container-fluid contact-form-distance d-flex ">
+        <div id="layer-image"><img class="" src="./images/4.png">
+            <div class="container ">
+                <div class="contact-form" id="contact-form">
+                </div>
+            </div>
+        </div>
+        <div class="blue-box-contact-form" id="blue-box-contact-form">
+
+        </div>
+        <div class="form">
+            <div class="box-ind">
+                <h2 class="text-in-white-contact-blue">Заполните форму для получения консультации</h2>
+                <p class="text-in-white-contact-grey">Мы перезвоним вам в течении часа в рабочее время и ответим на все
+                    вопросы</p>
+                <input class="input-contact" type="text" placeholder=" Имя">
+                <input class="input-contact" type="text" placeholder=" Телефон">
+                <input class="input-contact" type="text" placeholder=" Введите ваш вопрос ...">
+                <button type="button" class="btn btn-warning button-call-back look-more">Заказать звонок</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <h2 class="text-result-of-work">Популярные товары</h2>
+            <button type="button" class="btn btn-outline-warning text-buttom-next read-more about-best"> В магазин
+                <img class="text-left-margin-sale" src="./images/icons/ArrowYellow.svg"></button>
+        </div>
+        <nav class="row d-flex justify-content-between">
+            <div class="col-12 col-md-3 top-padding-sales">
+                <div class="popular-items-sales">
+                    <h3 class="text-popular-bar-top"> Грунт-эмаль и шпаклёвка Capacryl Airless-Füller </h3>
+                    <div class=" d-flex justify-content-center">
+                        <a><img class="text-left-margin-sale" src="./images/11.png"></a>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-7 col-md-7">
+                            <ul class="text-popular-name-type text-sale-distance">
+                                <li>Упаковка:</li>
+                                <li>Цвет:</li>
+                                <li>Степень глянца:</li>
+                                <li>Плотность:</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <ul class="text-popular-name-number">
+                                <li>5 литров</li>
+                                <li>Белый</li>
+                                <li>Матовый</li>
+                                <li>ок. 1,5 г/см3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-line-through">
+                        3 523 грн.
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="popular-name-price">
+                            2 923 грн.
+                        </div>
+                        <a type="button"><img src="./images/cartYellow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 top-padding-sales">
+                <div class="popular-items-sales">
+                    <h3 class="text-popular-bar-top"> Грунт-эмаль и шпаклёвка Capacryl Airless-Füller </h3>
+                    <div class=" d-flex justify-content-center">
+                        <a><img class="text-left-margin-sale" src="./images/11.png"></a>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-7 col-md-7">
+                            <ul class="text-popular-name-type text-sale-distance">
+                                <li>Упаковка:</li>
+                                <li>Цвет:</li>
+                                <li>Степень глянца:</li>
+                                <li>Плотность:</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <ul class="text-popular-name-number">
+                                <li>5 литров</li>
+                                <li>Белый</li>
+                                <li>Матовый</li>
+                                <li>ок. 1,5 г/см3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-line-through">
+                        3 523 грн.
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="popular-name-price">
+                            2 923 грн.
+                        </div>
+                        <a type="button"><img src="./images/cartYellow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 top-padding-sales">
+                <div class="popular-items-sales">
+                    <h3 class="text-popular-bar-top"> Грунт-эмаль и шпаклёвка Capacryl Airless-Füller </h3>
+                    <div class=" d-flex justify-content-center">
+                        <a><img class="text-left-margin-sale" src="./images/11.png"></a>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-7 col-md-7">
+                            <ul class="text-popular-name-type text-sale-distance">
+                                <li>Упаковка:</li>
+                                <li>Цвет:</li>
+                                <li>Степень глянца:</li>
+                                <li>Плотность:</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <ul class="text-popular-name-number">
+                                <li>5 литров</li>
+                                <li>Белый</li>
+                                <li>Матовый</li>
+                                <li>ок. 1,5 г/см3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-line-through">
+                        3 523 грн.
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="popular-name-price">
+                            2 923 грн.
+                        </div>
+                        <a type="button"><img src="./images/cartYellow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 top-padding-sales">
+                <div class="popular-items-sales">
+                    <h3 class="text-popular-bar-top"> Грунт-эмаль и шпаклёвка Capacryl Airless-Füller </h3>
+                    <div class=" d-flex justify-content-center">
+                        <a><img class="text-left-margin-sale" src="./images/11.png"></a>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-7 col-md-7">
+                            <ul class="text-popular-name-type text-sale-distance">
+                                <li>Упаковка:</li>
+                                <li>Цвет:</li>
+                                <li>Степень глянца:</li>
+                                <li>Плотность:</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <ul class="text-popular-name-number">
+                                <li>5 литров</li>
+                                <li>Белый</li>
+                                <li>Матовый</li>
+                                <li>ок. 1,5 г/см3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-line-through">
+                        3 523 грн.
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="popular-name-price">
+                            2 923 грн.
+                        </div>
+                        <a type="button"><img src="./images/cartYellow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 top-padding-sales">
+                <div class="popular-items-sales">
+                    <h3 class="text-popular-bar-top"> Грунт-эмаль и шпаклёвка Capacryl Airless-Füller </h3>
+                    <div class=" d-flex justify-content-center">
+                        <a><img class="text-left-margin-sale" src="./images/11.png"></a>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-7 col-md-7">
+                            <ul class="text-popular-name-type text-sale-distance">
+                                <li>Упаковка:</li>
+                                <li>Цвет:</li>
+                                <li>Степень глянца:</li>
+                                <li>Плотность:</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <ul class="text-popular-name-number">
+                                <li>5 литров</li>
+                                <li>Белый</li>
+                                <li>Матовый</li>
+                                <li>ок. 1,5 г/см3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-line-through">
+                        3 523 грн.
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="popular-name-price">
+                            2 923 грн.
+                        </div>
+                        <a type="button"><img src="./images/cartYellow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 top-padding-sales">
+                <div class="popular-items-sales">
+                    <h3 class="text-popular-bar-top"> Грунт-эмаль и шпаклёвка Capacryl Airless-Füller </h3>
+                    <div class=" d-flex justify-content-center">
+                        <a><img class="text-left-margin-sale" src="./images/11.png"></a>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-7 col-md-7">
+                            <ul class="text-popular-name-type text-sale-distance">
+                                <li>Упаковка:</li>
+                                <li>Цвет:</li>
+                                <li>Степень глянца:</li>
+                                <li>Плотность:</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <ul class="text-popular-name-number">
+                                <li>5 литров</li>
+                                <li>Белый</li>
+                                <li>Матовый</li>
+                                <li>ок. 1,5 г/см3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-line-through">
+                        3 523 грн.
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="popular-name-price">
+                            2 923 грн.
+                        </div>
+                        <a type="button"><img src="./images/cartYellow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 top-padding-sales">
+                <div class="popular-items-sales">
+                    <h3 class="text-popular-bar-top"> Грунт-эмаль и шпаклёвка Capacryl Airless-Füller </h3>
+                    <div class=" d-flex justify-content-center">
+                        <a><img class="text-left-margin-sale" src="./images/11.png"></a>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-7 col-md-7">
+                            <ul class="text-popular-name-type text-sale-distance">
+                                <li>Упаковка:</li>
+                                <li>Цвет:</li>
+                                <li>Степень глянца:</li>
+                                <li>Плотность:</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <ul class="text-popular-name-number">
+                                <li>5 литров</li>
+                                <li>Белый</li>
+                                <li>Матовый</li>
+                                <li>ок. 1,5 г/см3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-line-through">
+                        3 523 грн.
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="popular-name-price">
+                            2 923 грн.
+                        </div>
+                        <a type="button"><img src="./images/cartYellow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 top-padding-sales">
+                <div class="popular-items-sales">
+                    <h3 class="text-popular-bar-top"> Грунт-эмаль и шпаклёвка Capacryl Airless-Füller </h3>
+                    <div class=" d-flex justify-content-center">
+                        <a><img class="text-left-margin-sale" src="./images/11.png"></a>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-7 col-md-7">
+                            <ul class="text-popular-name-type text-sale-distance">
+                                <li>Упаковка:</li>
+                                <li>Цвет:</li>
+                                <li>Степень глянца:</li>
+                                <li>Плотность:</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <ul class="text-popular-name-number">
+                                <li>5 литров</li>
+                                <li>Белый</li>
+                                <li>Матовый</li>
+                                <li>ок. 1,5 г/см3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-line-through">
+                        3 523 грн.
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="popular-name-price">
+                            2 923 грн.
+                        </div>
+                        <a type="button"><img src="./images/cartYellow.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning button-look-more look-more">Смотреть все товары
+                &#8594;</button>
+        </div>
+    </div>
+    <div class="map-located">
+        <div class="contact-bar-blue">
+            <div class="core">
+                <div class="box-contact-ind">
+                    <h2 class="text-in-white-contact-blue">Контакты</h2>
+                    <span class="yellow-text-contact">Наш офис:</span>
+                    <div class="grey-text-contact">
+                        <span>г.Днепр, пр. С.Нигояна, 98</br>
+                        </span>
+                        <span>Пн-Пт: 7:00-18:00</span>
+                    </div>
+                    <div class="grey-text-contact-phones">
+                        <span>+38 (050) 44 22 555
+                            </br>
+                        </span>
+                        <span>+38 (067) 899 05 75</span>
+                    </div>
+                    <span class="yellow-text-contact">Электронная почта:</span>
+                    <div class="grey-text-contact">
+                        <span>dp_postavka@ukr.net
+                            </br>
+                        </span>
+                        <span>fb_centr@ukr.net</span>
+                    </div>
+                    <div>
+                        <a href="#"><img class="" src="./images/inst.svg"></a>
+                        <a href="#"><img class="icon-contact" src="./images/facebook.svg"></a>
+                        <a href="#"><img class="icon-contact" src="./images/whatsapp.svg"></a>
+                        <a href="#"><img class="icon-contact" src="./images/viber.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-distance">
+        <div class="container">
+            <div class="row d-flex justify-content-between ">
+                <div class="col-12 col-md-6">
+                    <div class="">
+                        <ul class="d-flex justify-content-between align-items-center">
+                            <li><a class="align-items-center d-flex align-items-center" href="#">
+                                    <img src="./images/logo.png">
+                                    <span class="text-bigger logo-text">Ремонтные </br>и&nbsp;строительные
+                                        </br>
+                                        работы</span>
+                                </a>
+                            </li>
+                            <li><a class="navbar number-text" href="#">+38 (044) 784-23-85</a>
+                                <a class="navbar" href="#">г.Днепр, пр. С. Нигоянаб 98</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#"><img class="icon-soc" src="./images/binst.svg"></a>
+                                    <a href="#"><img class="icon-soc" src="./images/bfacebook.svg"></a>
+                                    <a href="#"><img class="icon-soc" src="./images/bwhatsapp.svg"></a>
+                                    <a href="#"><img class="icon-soc" src="./images/bviber.svg"></a>
+                                </div>
+                                <a class="navbar" href="#">Пн-Пт: 8:00-18:00</a>
+                            </li>
+                        </ul>
+                        <ul class="d-flex justify-content-between align-items-center">
+                            <li class="align-items-center d-flex justify-content-between">
+                                <a href="#"><img src="./images/visa.png"></a>
+                                <a class="text-left-margin-sale" href="#"><img src="./images/mastercard.png"></a>
+                                <a class="text-left-margin-sale" href="#"><img src="./images/privat24.png"></a>
+                            </li>
+                            <li>
+                                <nav class="navbar navbar-light bg-light">
+                                    <form class="form-inline">
+                                        <input class="form-control mr-sm-2 search-list search-footer" type="search"
+                                            placeholder=" Поиск на сайте ..." aria-label="Search">
+
+                                    </form>
+                                </nav>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <ul>
+                        <li class="text-margin-footer-list">Портфолио</li>
+                        <li class="text-margin-footer-list">Товары</li>
+                        <li class="text-margin-footer-list">Цены</li>
+                        <li class="text-margin-footer-list">О нас</li>
+                        <li class="text-margin-footer-list">Портфолио</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <ul class="text-footer-distance">
+                        <li class="text-margin-footer-list">Фасадные работы</li>
+                        <li class="text-margin-footer-list">Внутренняя отделка</li>
+                        <li class="text-margin-footer-list">Архитектура и декор</li>
+                        <li class="text-margin-footer-list">Кровельные работы</li>
+                        <li class="text-margin-footer-list">Штукатурные работы</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <ul class="text-footer-distance">
+                        <li class="text-margin-footer-list">Полусухая стяжка полов</li>
+                        <li class="text-margin-footer-list">Ремонтные работы</li>
+                        <li class="text-margin-footer-list">Эпоксидные полы</li>
+                        <li class="text-margin-footer-list">Заливка полистробетоном</li>
+                        <li class="text-margin-footer-list"><button type="button"
+                                class="btn btn-outline-warning text-buttom-next read-more about-footer"> В магазин
+                                <img class="text-left-margin-sale" src="./images/icons/Arrow.svg"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-blue-footer">
+            <div class="container">
+                <div class="d-flex justify-content-between footer-text-polici">
+                    <span>ФасадБуд © 2005-2020. Все права защищены</span> <span>Политика
+                        конфиденциальности</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
