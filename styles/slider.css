@@ -1,0 +1,130 @@
+:root{
+    
+    --slider-first-color: rgb(11, 90, 168);
+    --text-white: #FFFFFF;
+}
+
+.slider{
+    width: 833px;
+    height: 496px;
+    overflow: hidden;
+}
+
+.slider__wrapper{
+    width: 200%;
+    height: 100%;
+    font-size: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.slider__slide{
+    width: 50%;
+    height: 100%;
+    font-size: 1rem;
+}
+
+.slider__navigation{
+    position: absolute;
+    bottom: 53px;
+    left: 79px;
+}
+
+.slider__span{
+    display: inline-block;
+    width: 15px;
+    height: 4px;
+    margin: 3px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+}
+.slider__arrow{
+    position: absolute;
+    bottom: 54px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.slider__arrow_left{
+    left: 64px;
+}
+.slider__arrow_right{
+    left: 189px;
+}
+
+.slider__arrow::after,.slider__arrow::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 3.33px;
+    background-color: var(--text-white);
+    border-radius: 2px;
+    position: absolute;
+}
+
+.slider__arrow:hover::after,.slider__arrow:hover::before{
+    background-color: var(--slider-first-color);
+}
+.slider__arrow_left::after,.slider__arrow_left::before{
+    transform-origin: 1.5px center;
+}
+.slider__arrow_right::after,.slider__arrow_right::before{
+    transform-origin: 9px center;
+}
+
+.slider__arrow::after{
+    transform: rotate(45deg);
+}
+.slider__arrow::before{
+    transform: rotate(-45deg);
+}
+
+.slider__span.slider__span_active{
+    background: var(--text-white);
+}
+.slider-text-color.banner-location.placed-in
+{
+position: absolute;
+bottom: 82px;
+left:62px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+color: var(--text-white);
+cursor: pointer;
+}
+.slider-text-color.banner-location.placed-on
+{
+color: rgba(255, 255, 255, 0.7);
+}
+.color-slide-number
+{
+    background-color: rgba(101, 181, 252, 0.6) !important;
+    color: rgba(101, 181, 252, 0.6) !important;
+}
+
+.color-slide-number.active
+{
+    background-color: #65B5FC !important;
+    color: #65B5FC !important;
+}
+
+.slider-buttom
+{display: flex;
+    justify-content: left !important;
+    margin-bottom: -50px;;
+}
+
+.carousel-control-prev
+{
+    margin-left: -15px;
+    
+    
+}
+
+.carousel-control-next
+{
+    margin-right: -25px;
+}
